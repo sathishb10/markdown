@@ -1,0 +1,76 @@
+$base-color: #444;
+*$grey: #f1f1f1;
+
+padding-m: 40px 80px;
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+html,body{
+
+height: 100%;
+margin:0;
+
+}
+
+body{
+font:300 16px 'Cousine';
+color: $base-color;
+line-height: 1.5em;
+}
+.raw-switch{
+font-size: .9em;
+color: green;
+position: fixed;
+top:20px;
+left:40px;
+z-index: 1; /*dought*/
+}
+aside,section{
+width:50%;
+padding: $padding-m;
+}
+
+aside{
+
+background: $grey;
+white-space: pre-wrap;
+position: fixed;
+top:0;
+left:0;
+bottom: 10px;
+overflow: scroll;
+float: left;
+&:focus{
+
+	outline:none;
+}
+
+}
+
+section{
+
+height: 100%;
+margin-left: 50%;
+
+
+overflow-x: hidden;
+overflow-y: scroll;
+
+
+ h1 {
+    font-size: 1.8em;
+  }
+  
+  b {
+    font-weight: 700;
+  }
+  
+  pre {
+    overflow-y: scroll;
+  }
+}'
